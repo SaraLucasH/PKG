@@ -1,11 +1,9 @@
 from math import log2
-from random import randint, random
-
-
-def miller_rabin(n:int) -> bool :
+from random import randint
+def millerRabin(n:int) -> bool :
     #Step 1
     prev_n= n-1
-    
+
     s = round(log2(prev_n))
     if s==1 :
         return False
@@ -42,6 +40,3 @@ def miller_rabin(n:int) -> bool :
     if(x==-1):
         return True
     return False
-
-
-    
